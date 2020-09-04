@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Didact+Gothic&family=Montserrat:wght@400;700;900&display=swap');
+
+/* config */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+body{
+    background: #F0F0F7;
+}
+
+.svg-icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #ffffff;
+}
+
+.svg-icon circle {
+    stroke: #ffffff;
+    stroke-width: 1;
+}
+
+/* header */
+
+#calcular-nota{
+    background: #F0F0F7;
+}
+
+#calcular-nota-header{
+    background: #8257E5;
+    padding: 50px 0px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.calcular-nota-header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+.calcular-nota-header-left-tab{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    width: 60%;
+}
+.calcular-nota-header-left-tab img{
+    width: 60%;
+}
+
+.calcular-nota-header-left-tab h3{
+    font-family: 'Alata';
+    font-size: 24px;
+    margin: 30px 0px;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.calcular-nota-container{
+    width: 50%;
+    margin: auto;
+}
+
+#calcular-nota-section{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.calcular-nota-form-aria{
+    width: 80%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin: -70px auto 30px;
+    padding: 50px 50px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.calcular-nota-form-aria h1{
+    font-family: 'Alata';
+    font-size: 34px;
+    color: #5721D4;
+    font-weight: 900;
+    text-align: center;
+}
+
+.calcular-nota-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.nota-1, .nota-2, .nota-3{
+    width: 20%;
+    margin: 10px;
+}
+
+.nota-1 label,
+.nota-2 label,
+.nota-3 label{
+    font-family: 'Alata';
+    font-weight: 100;
+    color: #cecece;
+}
+
+.calcular-nota-input input{
+    text-align: center;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #cecece;
+    color: #8257E5;
+    font-family: 'Didact Gothic';
+    font-weight: 900;
+    padding: 20px;
+    font-size: 40px;
+    width: 100%;
+    transition: 0.2s ease-in;
+}
+
+.calcular-nota-input input:focus{
+    border-color: #9871F5;
+}
+
+.calcular-nota-input input:valid{
+    border-color: #04D361;
+}
+
+.calcular-nota-input input::-webkit-outer-spin-button,
+.calcular-nota-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.calcular-nota-input input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.calcular-nota-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.enviar-nota-button{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: #04D361;
+    padding: 25px 60px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.clear-nota-button{
+    width: 30%;
+    display: none;
+    justify-content: center;
+    align-items: center !important;
+    align-content: center !important;
+    background: #9871F5;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+/* MSGS */
+.calular-nota-alert-messages{
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#calcular-nota-alert-reprovado h1,
+#calcular-nota-alert-reprovado2 h1,
+#calcular-nota-alert-aprovado h1,
+#calcular-nota-alert-recuperar h1{
+    font-size: 40px;
+    font-family: 'Alata';
+}
+
+#calcular-nota-alert-reprovado h3,
+#calcular-nota-alert-reprovado2 h3,
+#calcular-nota-alert-aprovado h3,
+#calcular-nota-alert-recuperar h3{
+    font-size: 26px;
+    font-family: 'Didact Gothic';
+    font-weight: 100;
+    margin: 50px auto;
+}
+
+#calcular-nota-alert-reprovado,
+#calcular-nota-alert-reprovado2,
+#calcular-nota-alert-aprovado,
+#calcular-nota-alert-recuperar{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#voltar-calcular-nota-button{
+    display: none;
+    justify-content: center;
+    margin: auto;
+    padding: 10px 100px;
+    border: none;
+    background: #5721D4;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#voltar-calcular-nota-button:hover + #nota-recuperar-value{
+    display: none;
+}
+
+#enviar-nota-button svg{
+    fill: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* footer */
+footer{
+    font-family: 'Alata';
+    font-size: 10px;
+    padding: 10px;
+    color: #b6b6b6;
+    text-align: center;
+}
+footer a {
+    color: #5721D4;
+    text-decoration: none;
+}
+/* animations */
+.notas-message-show{
+    
+}
