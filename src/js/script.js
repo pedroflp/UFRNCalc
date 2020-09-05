@@ -78,13 +78,15 @@ function calcularNotas(){
         } 
         // APRVD 
         if(nota_parcial >= 5 && nota_parcial <= 10){
-            calcular.style.display = 'none';
+            if(nota_1 >= 3 && nota_2 >= 3 && nota_3 >=3){
+                calcular.style.display = 'none';
 
-            document.getElementById('nota-aprovado-value').innerHTML = nota_parcial;
-            document.getElementById('voltar-calcular-nota-button').style.display = 'flex';
-            aprovado.style.display = 'flex';
-
-            console.log('apr');  
+                document.getElementById('nota-aprovado-value').innerHTML = nota_parcial;
+                document.getElementById('voltar-calcular-nota-button').style.display = 'flex';
+                aprovado.style.display = 'flex';
+    
+                console.log('apr');
+            }  
         } 
     }
     
