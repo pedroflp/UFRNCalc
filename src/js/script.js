@@ -44,7 +44,7 @@ function calcularNotas(){
     }
         
     // PODE FAZER P4 COM UMA NOTA ABAIXO DE 3
-    if ((nota_1 < 3 && nota_2 >= 3 && nota_3 >= 3) || (nota_1 >= 3 && nota_2 < 3 && nota_3 >= 3) || (nota_1 >= 3 && nota_2 >= 3 && nota_3 < 3) || (nota_1 == 3 && nota_2 == 3 && nota_3 == 3) || (nota_1 >= 3 && nota_2 >= 3 && nota_3 > 3 && nota_parcial >= 3 && nota_parcial < 5)) {
+    if ((nota_1 < 3 && nota_2 >= 3 && nota_3 >= 3) || (nota_1 >= 3 && nota_2 < 3 && nota_3 >= 3) || (nota_1 >= 3 && nota_2 >= 3 && nota_3 < 3) || (nota_1 == 3 && nota_2 == 3 && nota_3 == 3) || (nota_1 >= 3 && nota_2 >= 3 && nota_3 >= 3 && nota_parcial >= 3 && nota_parcial < 5)) {
         calcular.style.display = 'none';
             
         document.getElementById('nota-recuperar-value').innerHTML = nota_parcial;
